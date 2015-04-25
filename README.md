@@ -4,14 +4,17 @@ A web based game using WebGL and Websockets that can be controlled using a smart
 Original game by [Charlie Walter](http://charliejwalter.net/).
 
 ##How to use:
-npm install
-node server.js
 
-Point your browser to `http://localhost:8000`
-Read the QR code on the screen on your smart phone.
+```
+$npm install
+$node server.js
+
+```
+Point your browser to `http://localhost:8000` </br>
+Read the QR code on the screen on your smart phone.  
 
 Controls:
 
-Press down to accelerate.
-Turn the phone side way to turn the car.
-If the steering seems inverted, try rotating your phone 180 degrees.
+$Press down to accelerate.  </br>
+$Turn the phone side way to turn the car. </br>
+$If the steering seems inverted, try rotating your phone 180 degrees.  </br>
