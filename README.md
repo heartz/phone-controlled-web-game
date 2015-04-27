@@ -15,6 +15,6 @@ Read the QR code on the screen on your smart phone.
 
 Controls:
 
-$Press down to accelerate.  </br>
-$Turn the phone side way to turn the car. </br>
-$If the steering seems inverted, try rotating your phone 180 degrees.  </br>
+Press down to accelerate.  </br>
+Turn the phone side way to turn the car. </br>
+If the steering seems inverted, try rotating your phone 180 degrees.  </br>
