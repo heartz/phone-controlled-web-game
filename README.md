@@ -8,8 +8,8 @@ Original game by [Charlie Walter](http://charliejwalter.net/).
 ```
 $npm install
 $node server.js
-
 ```
+
 Point your browser to `http://localhost:8000` </br>
 Read the QR code on the screen on your smart phone.  
 

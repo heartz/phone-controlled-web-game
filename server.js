@@ -23,6 +23,13 @@ var io = require('socket.io').listen(server);
 var game_sockets = {};
 var controller_sockets = {};
 io.sockets.on('connection', function (socket) {
+	// Getting the localhost
+	socket.on('load_ip',function () {
+		var os = require( 'os' );
+		var networkInterfaces = os.networkInterfaces( );
+		var etho = networkInterfaces.eth0[0].address;
+		socket.emit('host_id',etho);
+	});
 
 	socket.on('controller_connect', function(game_socket_id){
 
