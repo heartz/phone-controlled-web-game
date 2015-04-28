@@ -84,3 +84,5 @@ io.sockets.on('connection', function (socket) {
 
 // Loading public folder
 app.use("/public", express.static(__dirname + '/public'));
+// Loading all the resources
+app.use("/resources", express.static(__dirname + '/resources'));
