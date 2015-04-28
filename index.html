@@ -15,14 +15,24 @@
 		controller_state = {};
 		var game_connected = function() {
 			var host;
-			io.emit('load_ip');
-			io.on('host_id',function(data){
-				host = data;
-				var url = "http://"+host+":8000?id=" + io.id;
+			host = window.location.href;
+			split_list = host.split(":");
+			if(split_list[1]=="//localhost"){
+				io.emit('load_ip');
+				io.on('host_id',function(data){
+					host = data;
+					var url = "http://"+host+":8000?id=" + io.id;
+					var qr_code = new QRCode("qr");
+					qr_code.makeCode(url);
+					io.removeListener('game_connected', game_connected);
+				});
+			}
+			else{
+				var url = host+"?id=" + io.id;
 				var qr_code = new QRCode("qr");
 				qr_code.makeCode(url);
 				io.removeListener('game_connected', game_connected);
-			});
+			}
 		};
 		if (window.location.href.indexOf('?id=') > 0) {
 			io.emit('controller_connect', window.location.href.split('?id=')[1]);
