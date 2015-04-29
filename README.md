@@ -3,6 +3,8 @@ A web based game using WebGL and Websockets that can be controlled using a smart
 
 Original game by [Charlie Walter](http://charliejwalter.net/).
 
+Live demo : [Link](https://morning-crag-2187.herokuapp.com/)
+
 ##How to use:
 
 ```
