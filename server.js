@@ -2,7 +2,7 @@ var express = require('express'),
     http    = require('http'),
     app     = express(),
     server  = http.createServer(app),
-    port    = 8000;
+    port    = process.env.PORT || 8000;
 
 server.listen(port);
 app
